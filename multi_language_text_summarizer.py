@@ -1,5 +1,15 @@
-import streamlit as st
+## installing th epackages
 import spacy
+from spacy.cli import download
+
+# Download spaCy models
+download("en_core_web_sm")
+download("es_core_news_sm")
+download("fr_core_news_sm")
+download("de_core_news_sm")
+
+
+import streamlit as st
 from spacy.lang.en.stop_words import STOP_WORDS as EN_STOP_WORDS
 from spacy.lang.es.stop_words import STOP_WORDS as ES_STOP_WORDS
 from spacy.lang.fr.stop_words import STOP_WORDS as FR_STOP_WORDS
