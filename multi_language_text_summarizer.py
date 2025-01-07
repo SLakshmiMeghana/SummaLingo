@@ -1,11 +1,3 @@
-## installing th epackages
-pip install spacy
-
-python -m spacy download en_core_web_sm #English
-python -m spacy download es_core_news_sm  # Spanish
-python -m spacy download fr_core_news_sm  # French
-python -m spacy download de_core_news_sm  # German
-
 import spacy
 import streamlit as st
 from spacy.lang.en.stop_words import STOP_WORDS as EN_STOP_WORDS
